@@ -2,7 +2,7 @@
 echo "正在安装Ubuntu Desktop"
 apt install net-tools -y
 host_ip=$(ifconfig | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' | head -n1)
-apt-get update
+apt-get update -y
 sudo apt-get install iptables -y
 sudo iptables -I INPUT -p tcp --dport 3389 -j ACCEPT
 iptables-save
