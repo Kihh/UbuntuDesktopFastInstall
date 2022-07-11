@@ -2,7 +2,7 @@
 ```
 apt-get update
 apt install screen -y
-screen -S id
+screen -U -S id
 ```
 ```
 bash -c "$(wget https://raw.githubusercontent.com/UbuntuDesktopFastInstall/installdesktop.sh -O -)"
